@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Conversion</title>
+    <script>
+        function convertTimestamp() {
+            const timestamp = 1718582293;
+            const date = new Date(timestamp * 1000); // Convert to milliseconds
+            document.getElementById('date-cell').innerText = date.toLocaleString();
+        }
+    </script>
+</head>
+<body onload="convertTimestamp()">
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>1718582293</td>
+            <td id="date-cell"></td>
+        </tr>
+    </table>
+</body>
+</html>
