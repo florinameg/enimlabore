@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Save/Restore</title>
+  <style>
+    .container { display: flex; }
+    .panel { border: 1px solid #ccc; padding: 10px; margin: 5px; width: 100px; height: 100px; cursor: move; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="panel1" class="panel" draggable="true">Panel 1</div>
+    <div id="panel2" class="panel" draggable="true">Panel 2</div>
+    <div id="panel3" class="panel" draggable="true">Panel 3</div>
+  </div>
+  <button onclick="saveLayout()">Save Layout</button>
+  <button onclick="restoreLayout()">Restore Layout</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
